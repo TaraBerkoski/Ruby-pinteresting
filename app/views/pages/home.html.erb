@@ -1,4 +1,23 @@
-<div class="jumbotron">
+<div class="jumbotron center">
 	<h1>Welcome to my app!</h1>
-	<p>Click here to <%= link_to "Sign Up", "#", class: "btn btn-primary btn-lg" %></p>
+	<p>
+		<%= link_to "Log In", "#", class: "btn btn-default btn-lg" %>
+		<%= link_to "Sign Up", "#", class: "btn btn-primary btn-lg" %>
+	</p>
 </div>
+<footer>
+	<div class="col-md-4">
+		<h2>Contact Me</h2>
+			<ul>
+				<li><%= link_to "Email", "mailto:tara.berkoski@gmail.com" %></li>
+				<li><%= link_to "Twitter", "twitter.com/taraberkoski" %></li>
+				<li><%= link_to "Facebook", "facebook.com/tara.berkoski" %></li>
+				<li><%= link_to "GitHub", "github.com/taraberkoski" %></li>
+	</div>
+	<div class="col-md-4">
+		<h2>About Pinteresting</h2>
+		<ul>
+			<li><%= link_to "About", about_path %></li>
+			<li><%= link_to "BDW", "bdw.colorado.edu" %></li>
+	</div>
+</footer>
